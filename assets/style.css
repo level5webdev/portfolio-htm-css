@@ -1,6 +1,6 @@
 header {
-  background-color: #7C5E99;
-  display:flex;
+  background-color: #7c5e99;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -27,18 +27,18 @@ a:hover {
   color: rgba(242, 90, 113, 0.781);
 }
 
-a:hover:last-of-type{
+a:hover:last-of-type {
   color: initial;
 }
 
 a::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #F25A70;
-    margin-right: 10px;
-  }
-  
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #f25a70;
+  margin-right: 10px;
+}
+
 #button {
   display: inline-block;
   background-color: #f25a70;
@@ -50,6 +50,74 @@ a::before {
 
 #button:hover {
   transform: scale(1.05);
-  
+  box-shadow: 3px 3px 1px #000;
+}
+
+.section-container {
+  display: flex;
+  border-bottom: 5px solid #000;
+  height: 80vh;
+  background-image: url('84433983_2642825395963838_1903381638453133312_n.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 58%;
+}
+
+.section-container > .container {
+  padding-left: 80px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-right: 5px solid #000;
+  backdrop-filter: blur(2px) ;
+}
+
+.section-container .container > .wrapper {
+  grid-area: wrapper;
+  display: flex;
+  flex-direction: column;
+  background-color: #3a4042;
+  padding: 45px 90px;
+  box-shadow: 8px 8px 1px #000;
+  margin-top: 80px;
+  margin-bottom: 36px;
+}
+
+.section-container .container > .wrapper > .title,
+.section-container .container > .wrapper > .paragraph {
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 5px 3px 1px #000;
+}
+
+.section-container .container > .wrapper > .title {
+  color: #f25a70;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-container .container > .wrapper > .paragraph {
+  color: #fff;
+  font-size: 30px;
+}
+.section-container .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-container .container .button {
+  display: inline-block;
+  background-color: #f25a70;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 0 #000;
+  transition: transform 200ms linear;
+  cursor: pointer;
+  border:none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+.section-container .container .button:hover {
+  transform: scale(1.05);
   box-shadow: 3px 3px 1px #000;
 }
