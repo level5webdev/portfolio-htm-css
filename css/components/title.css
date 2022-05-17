@@ -1,10 +1,6 @@
-.section-container .container > .wrapper > .title,
-.section-container .container > .wrapper > .paragraph {
+.title {
   font-family: "Press Start 2P", cursive;
   text-shadow: 5px 3px 1px #000;
-}
-
-.section-container .container > .wrapper > .title {
   color: #f25a70;
   font-size: 40px;
   margin-bottom: 20px;
