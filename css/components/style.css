@@ -54,25 +54,39 @@ a::before {
 }
 
 .section-container {
+  position: relative;
   display: flex;
   border-bottom: 5px solid #000;
   height: 80vh;
-  background-image: url('84433983_2642825395963838_1903381638453133312_n.jpg');
+  background-image: url('../../assets/84433983_2642825395963838_1903381638453133312_n.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 58%;
 }
+.section-container::before {
+  content: '';
+    width: 800px;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 5px solid #000;
+    backdrop-filter: blur(2px);
+    filter: blur(8px);
+    opacity: .8;
+    z-index: 1;
+
+}
 
 .section-container > .container {
   padding-left: 80px;
-  background-color: #fff;
-  opacity: 0.5;
-  border-right: 5px solid #000;
-  backdrop-filter: blur(2px) ;
 }
 
 .section-container .container > .wrapper {
+  position: relative;
+  z-index: 200;
   grid-area: wrapper;
+  filter: blur(0);
   display: flex;
   flex-direction: column;
   background-color: #3a4042;
@@ -82,26 +96,15 @@ a::before {
   margin-bottom: 36px;
 }
 
-.section-container .container > .wrapper > .title,
-.section-container .container > .wrapper > .paragraph {
-  font-family: "Press Start 2P", cursive;
-  text-shadow: 5px 3px 1px #000;
-}
 
-.section-container .container > .wrapper > .title {
-  color: #f25a70;
-  font-size: 40px;
-  margin-bottom: 20px;
-}
 
-.section-container .container > .wrapper > .paragraph {
-  color: #fff;
-  font-size: 30px;
-}
+
 .section-container .container .box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 .section-container .container .button {
   display: inline-block;
