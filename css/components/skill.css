@@ -1,0 +1,66 @@
+.skills {
+  background-color: #f25a70;
+  border-bottom: 10px solid #7c5e99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.skills .title {
+  text-shadow: none;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.skills .lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 960px;
+  width: 100%;
+  justify-content: center;
+}
+
+.skills .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+}
+
+.skills .image {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.skills .subtitle {
+  text-shadow: none;
+  font-size: 25px;
+  font-weight: 400;
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.skills .bar {
+  position: relative;
+  width: 370px;
+  height: 34px;
+  background-color: #fff;
+  border: 5px solid #000;
+  box-sizing: border-box;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.skills .bar::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 24px;
+  background-color: #7c5e99;
+  box-sizing: border-box;
+}
