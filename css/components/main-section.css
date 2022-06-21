@@ -9,10 +9,17 @@
   margin-bottom: 60px;
 }
 
-
 .main-section.-bgBlack{
   background-color: #000;
 }
-.main-section.-bgBorder{
+
+.main-section.-bdRed{
   border-bottom: 10px solid #f25a70;
+}
+
+.main-section.-bgPurple{
+  background-color: #7c5e99;
+}
+.main-section.-bdBlack{
+  border-bottom: 10px solid #000;
 }
