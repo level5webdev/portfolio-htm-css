@@ -285,9 +285,9 @@
     <form action="" class="main-form">
       <legend class="main-title -second">Contato</legend>
       <label class="main-label" for="name">Nome</label>
-      <input class="main-input" type="text" id="nome" name="name" />
+      <input class="main-input" type="text" id="nome" name="name" required/>
       <label class="main-label" for="email">E-mail</label>
-      <input class="main-input" type="email" id="email" name="name" />
+      <input class="main-input" type="email" id="email" name="name" required />
 
       <label class="main-label" for="message">Mensagem</label>
       <textarea
@@ -296,6 +296,7 @@
         id="message "
         cols="30"
         rows="10"
+        required
       ></textarea>
 
       <button class="main-button -full" type="submit">Enviar</button>
