@@ -10,6 +10,11 @@
   text-decoration: none;
   
   font-family: "Fira Code", Ariel, Helvetica, serif;
+  cursor: pointer;
+}
+
+.main-button.-full {
+  width: 100%;
 }
 
 .main-button:hover {
