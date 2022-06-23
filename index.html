@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/components/button-arrow.css" />
     <link rel="stylesheet" href="css/components/node-card.css" />
     <link rel="stylesheet" href="css/components/main-footer.css" />
+    <link rel="stylesheet" href="css/components/main-label.css" />
   </head>
   <body>
     <header class="main-header">
@@ -278,6 +279,23 @@
         Airsoft ou trocando ideias com amigos.
       </p>
     </section>
+
+    <form action="">
+      <label class="main-label" for="name">Nome</label>
+      <input type="text" id="nome" name="name"/>
+      <label class="main-label" for="email">E-mail</label>
+      <input type="email" id="email" name="name"/>
+      
+      <label class="main-label" for="message">Mensagem</label>
+      <textarea
+        name="message"
+        id="message "
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
 
     <footer class="main-footer">
       <a href="#" class="action">
